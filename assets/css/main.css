@@ -5721,3 +5721,55 @@ body.page-categories-2 .page-footer:before {
     transform: rotate(360deg);
   }
 }
+
+.widgets {
+  position: fixed;
+  bottom: 38px;
+  right: 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 99999;
+}
+
+.widgets a {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  border-radius: 100vh;
+  color: white;
+  background-color: #ECB611;
+
+  &:hover {
+    color: white !important;
+  }
+}
+
+.widgets a {
+  animation: shake 1s infinite;
+  animation-delay: 3s;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  75% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
